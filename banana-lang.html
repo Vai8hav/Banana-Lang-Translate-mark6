@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banana Speak</title>
+
+  <style>
+
+    :root {
+      --primary-color: #4b98f6;
+      --dark-color: #215ca5;
+      --hover-color: #fef052;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    textarea {
+      height: 10vh;
+      padding: 1rem;
+      width: 90%;
+      display:block;
+      margin: 1rem;
+      opacity: 80%;
+      font-size: large;
+    }
+
+    #output {
+      height: 10vh;
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid black;
+      width: 90%;
+      background-color: white;
+      opacity: 80%;
+    }
+
+    body {
+      background-image: url("./minions.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: large;
+      margin: 0;
+      font-family: monospace;
+    }
+    
+    main {
+      margin: auto;
+      text-align: center;
+      width: 60%;
+    }
+
+    button {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      margin: 0rem 0rem 4rem 0rem;
+      background-color: var(--dark-color);
+      color: aliceblue;
+      font-weight: 600;
+      font-family: monospace;
+      font-size: larger;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--hover-color) ;
+      color: black;
+      box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.258);
+    }
+
+    button:active {
+      transform: translateY(4px);
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: 600;
+      background: var(--primary-color);
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      padding: 2rem;
+      bottom: 0;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      padding-inline-start: 0px;
+    }
+
+    .list-style {
+      list-style: none;
+      margin: auto;
+      width: 60%;
+      text-align: center;
+      padding-inline-start: 0px;
+    }
+
+    .list-style-inline {
+      display: inline;
+      padding: 0rem 1rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+      <div>Let's talk banana!</div>
+  </header>
+
+  <main>
+  <p>Convert from English to Minion speak. This language is spoken by the minions in Despicable Me. The language is actually lots of languages. Yi kai yai yai bananna! Minion is a registered trademark of Universal Studios.</p>
+
+  <textarea id="txt-input" placeholder= "Put some english text here and we will convert it to bananaaa..."></textarea>
+  <button id="btn-translate">Translate</button>
+
+  <div style= "font-size: larger;">Output will be shown here 👇</div>
+  <div id="output"></div>
+</main>
+
+  <footer>
+    <ul class="list-style">
+      <li class="list-style-inline">
+        <a href="https://twitter.com/0xbasantani" target="_blank"><img src="./twitter1.svg"></a>
+      </li>
+      <li class="list-style-inline">
+        <a href="https://github.com/Vai8hav" target="_blank"><img src="./github.svg"></a>
+      </li>
+      <li class="list-style-inline">
+        <a href="https://www.linkedin.com/in/vaibhavbasantani/" target="_blank"><img src="./linkedin.svg"></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="./banana-app.js"></script>
+</body>
+</html>
