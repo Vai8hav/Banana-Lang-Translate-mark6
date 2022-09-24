@@ -1,4 +1,4 @@
-# banana-lang-translate (testing)
+# banana-lang-translate
 English to Banana language translation using VanillaJS
 
 ## Problem Statement:
